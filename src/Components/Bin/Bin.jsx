@@ -13,6 +13,7 @@ const Bin = () => {
   };
 
   return (
+    <>
     <div>
       <div>
         {data.map((item, index) => (
@@ -29,6 +30,8 @@ const Bin = () => {
       </div>
 
     </div>
+  
+      </>
   );
 };
 
