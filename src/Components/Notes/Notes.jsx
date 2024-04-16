@@ -33,11 +33,11 @@ const Notes = () => {
 
     const handleContentClick = () => {
         setContentClicked(true);
-        setTitleClicked(false); // Close title input box when content textarea is clicked
+        setTitleClicked(false); 
     };
 
     const handleTitleClick = () => {
-        setContentClicked(false); // Close content textarea when title input is clicked
+        setContentClicked(false); 
         setTitleClicked(true);
     };
 
@@ -57,9 +57,6 @@ const Notes = () => {
             setContentClicked(false);
             setTitleClicked(false);
             formRef.current.reset();
-
-            // Update the 'data' state with the new 'Items' array
-            // setData([...data, newItem]);
         }
     };
 
@@ -68,9 +65,6 @@ const Notes = () => {
             const deletedItem = Items[id];
             setItems((oldItems) => oldItems.filter((item, i) => i !== id));
             setItemsSaved(false);
-
-            // Remove the deleted item from the 'data' state
-            // setData(data.filter((item) => item !== deletedItem));
         }
     };
 
@@ -140,7 +134,7 @@ const Notes = () => {
 
                     </form>
 
-                        {(contentClicked || titleClicked) && ( // Render AddIcon only when either content or title is clicked
+                        {(contentClicked || titleClicked) && ( 
                             <button type="submit" className="w-36 md:w-auto ">
                                 <AddIcon className="" />
                             </button>

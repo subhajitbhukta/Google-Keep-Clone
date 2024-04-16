@@ -8,17 +8,15 @@ const UnArchive = () => {
 
     const handleDelete = (index) => {
         const updatedUnArchive = [...UnArchive];
-        const deletedItem = updatedUnArchive.splice(index, 1)[0]; // Access the first element of the array
+        const deletedItem = updatedUnArchive.splice(index, 1)[0]; 
         setUnArchive(updatedUnArchive);
-        setData(prevData => [...prevData, deletedItem]); // Add the deleted item directly
+        setData(prevData => [...prevData, deletedItem]); 
         console.log(data);
     };
 
     const handleArchiveClick = (index) => {
         const itemToArchive = UnArchive[index];
         setArchive([...ArchiveData, itemToArchive]);
-
-        // Remove the archived item from UnArchive without using handleDelete(index)
         setUnArchive(prevUnArchive => {
             const updatedUnArchive = [...prevUnArchive];
             updatedUnArchive.splice(index, 1);

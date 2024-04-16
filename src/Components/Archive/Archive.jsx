@@ -20,7 +20,7 @@ function Archive() {
     const Data = ArchiveData.filter((array, index) => index == i);
     const { titles, contents } = Data[0];
     console.log(titles, contents);
-    setUnArchive([...UnArchive, { titles, contents }]); // Ensure that UnArchive is properly updated with a valid value
+    setUnArchive([...UnArchive, { titles, contents }]);
     const updatedData = [...ArchiveData];
     updatedData.splice(i, 1); // Remove the item from ArchiveData array
     setArchive(updatedData);
@@ -59,7 +59,11 @@ function Archive() {
             )
         )}
 
-        <div className={`flex flex-col justify-center items-center mt-20 mb-8 ${!ArchiveData.length > 0 ? '' : 'hidden'}`}>
+        <div
+          className={`flex flex-col justify-center items-center mt-20 mb-8 ${
+            !ArchiveData.length > 0 ? "" : "hidden"
+          }`}
+        >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Grey_archive_icon_%28Wikiproject_icons%29.svg/600px-Grey_archive_icon_%28Wikiproject_icons%29.svg.png"
             alt=""

@@ -148,7 +148,6 @@ const EditLevels = () => {
       {showNotification && (
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 ">
           <div ref={notificationRef} className="notification w-52 text-sm  md:w-80 bg-white p-4 rounded-lg shadow-md transform transition-all duration-500">
-            {/* We’ll delete this label and remove it from all of your Keep notes. Your notes won’t be deleted. */}
             Submitting done...
           </div>
         </div>
