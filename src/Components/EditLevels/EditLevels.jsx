@@ -26,6 +26,17 @@ const EditLevels = () => {
   const [showNotification, setShowNotification] = useState(false);
   
 
+useEffect(() => {
+    if (showNotification) {
+      // Show the notification
+      notificationRef.current.style.opacity = '1';
+      const timeoutId = setTimeout(() => {
+        setShowNotification(false);
+      }, 1000);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [showNotification]);
+  
   const notificationRef = useRef(null);
 
   useEffect(() => {
