@@ -167,10 +167,7 @@ const Notes = () => {
                     </span>
                 </div>
             </div>
-{/*                 <footer className="flex justify-center">
-                    <p>&copy; {new Date().getFullYear()} Subhajit Bhukta. All rights reserved.</p>
-                </footer>
- */}
+
         </>
     );
 };
