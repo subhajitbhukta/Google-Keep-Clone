@@ -251,13 +251,7 @@ const Header = () => {
                         </div>
 
                         <div className=" flex justify-between content-evenly right-0 pr-2 gap-12 max-sm:gap-3 fixed">
-                            <li className="block  md:hidden sm:pr-11">
-                                <SearchIcon className="h-20 " 
-                                    onClick={(() => {
-                                        alert("This functionality not work at this time")
-                                    })}
-                                />
-                            </li>
+                            
                         </div>
                     </div>
                 </div>
