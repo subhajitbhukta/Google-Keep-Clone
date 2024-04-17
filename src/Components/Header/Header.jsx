@@ -249,10 +249,6 @@ const Header = () => {
                                 />
                             </div>
                         </div>
-
-                        <div className=" flex justify-between content-evenly right-0 pr-2 gap-12 max-sm:gap-3 fixed">
-                            
-                        </div>
                     </div>
                 </div>
             </div>
